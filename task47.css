@@ -1,0 +1,94 @@
+body {
+    background-color: #d8ff3b; /* Fondo amarillo */
+    color: #fcf6f6;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ff0055;
+    font-size: 3em;
+    text-shadow: 2px 2px #000;
+    margin-top: 20px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+fieldset {
+    border: 2px solid #ff0055;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    color: #ff0055;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, input[type="button"], input[type="reset"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0055;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+select {
+    background-color: #7e6e6e;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.added {
+    margin-bottom: 10px;
+}
+
+/*
+#personalizaPizza{
+    display:block;
+}
+*/
+input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: #cc0044;
+}
+
+input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+    background-color: #990033;
+}
+
+.horizontal-form {
+    display: flex;
+    align-items:center;
+}
+  
+.horizontal-form label {
+    margin-right: 10px; /* Espacio entre el label y el input */
+}
+  
+.horizontal-form input {
+    width: auto; /* El input ocupará el mínimo espacio posible */
+    flex-shrink: 1; /* Permite que el input se reduzca si es necesario */
+}

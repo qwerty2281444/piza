@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="task47.css">
+    <title>Formulario Pizzeria</title>
+  
+</head>
+<body>
+    <h1>Pedidos Pizzeria</h1>
+    <form>
+        <fieldset>
+            <legend>Pizzas</legend>
+                <fieldset id="seleccionPizza">
+                    <legend>Añade nueva pizza...</legend>
+                        <div id="listaPizzas">
+                            <label>Pizza:  //\\ RELLENAR CON LAS PIZZAS DEFINIDAS //\\ </label>
+                            <select name="tipo_pizza" id="tipo_pizza">
+                            	<option>...</option>
+                                <option>Margarita</option>
+                                <option>Pepperoni</option>
+                                <option>Baconi</option>
+                            </select>    
+                        </div>
+                        <div id="botonAñadir">
+                            <input id="añadirPizza" type="button" value="Añadir">
+                        </div>
+                </fieldset>
+                <fieldset id="personalizaPizza">
+                	<legend>Personaliza tus pizzas...</legend>
+                        <br>
+                		<div id="pizzaElegida" class="added">
+                        	<label id="labelPizzaSel"> Pizza Seleccionada:   //\\ MODIFICAR CON EL NOMBRE DE LA PIZZA SELECCIONADA //\\ </label>
+                		</div>
+                        <br>
+                		<div id="pizzaTamano" class="added">
+                        	<label>Tamaño:</label>
+                        	<select name="tamaño_pizza" id="tamaño_pizza">
+                        		<option>...</option>
+                                <option>Porción</option>
+                                <option>Individual</option>
+                                <option>Familiar</option>
+                            </select>
+                		</div>
+                        <label>Ingredientes extra:   //\\ PREMARCAR ACORDE CON INGREDIENTES //\\   </label>
+                		<div id="pizzaIngredientes" class="added">
+                            <input type="checkbox" value="cebolla" id="i1">Cebolla</input>
+                        	<input type="checkbox" value="atun" id="i2">Atun</input>
+                        	<input type="checkbox" value="bacon" id="i3">Bacon</input>
+                        	<input type="checkbox" value="champi" id="i4">Champiñones</input>
+                        	<input type="checkbox" value="jyork" id="i5">Jamón York</input>
+                            <input type="checkbox" value="piña" id="i6">Piña</input>
+                            <input type="checkbox" value="jamon" id="i7">Jamón</input>
+                            <input type="checkbox" value="rucula" id="i8">Rúcula</input>
+                            <input type="checkbox" value="extraqueso" id="i9">Extra de queso</input>
+                            <input type="checkbox" value="aceitunas" id="i10">Aceitunas</input>
+                            <input type="checkbox" value="huevo" id="i11">Huevo</input>
+                		</div>
+                        <div id="anyadirPizza" class="added">
+                			<input type="button" id="anyadirPizzaAComanda" value="Añadir pizza">
+                		</div>
+                		<div id="borrarPizza" class="added">
+                			<input type="button" value="Borrar pizza">
+                		</div>
+                </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Comanda</legend>
+            <label id="pizzaComandaLabel">  </label>
+            <div id="pizzaComanda" class="horizontal-form">
+                <label id="pizzaComandaLabel"> Pizza Seleccionada: </label>
+                <input type="button" id="pizzaComandaEliminar" value="Eliminar">
+            </div>
+        </fieldset>
+        <div>
+        	<input type="reset" name="botonBorrar" value="Borrar comanda">
+        	<input type="submit" name="botonValidar" value="Validar comanda">
+        </div>
+    </form> 
+    
+    
+      <script src="task47.js"></script>
+</body>
+</html>
